@@ -8,4 +8,6 @@ import net.batch7.apiLibrary.model.entity.Book;
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
 
+    Book findByTitle(String title);
+
 }

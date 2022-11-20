@@ -25,6 +25,6 @@ public class Borrow {
     private Book book;
 
     private LocalDateTime borrowedAt = LocalDateTime.now();
-    private LocalDateTime returnedAt = LocalDateTime.now();
+    private LocalDateTime returnedAt;
 
 }

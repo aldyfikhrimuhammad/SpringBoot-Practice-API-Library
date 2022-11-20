@@ -5,12 +5,15 @@ import net.batch7.apiLibrary.model.dto.ResponseData;
 
 public interface BorrowService {
 
-    ResponseData<Object> addBorrow(BookDto request);
+    ResponseData<Object> addBorrow(Long id, BookDto request);
 
-    ResponseData<Object> getBorrowsData();
+    ResponseData<Object> getBorrowsData(Boolean status);
 
     ResponseData<Object> getBorrowDataById(long id);
 
-    ResponseData<Object> updateBorrowData(long id, BookDto request);
+//    ResponseData<Object> returnBook(long id, BorrowDto request);
+
+
+    ResponseData<Object> getBorrower(Boolean status);
 
 }
